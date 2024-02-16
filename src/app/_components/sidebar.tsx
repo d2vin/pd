@@ -3,10 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { SmartphoneIcon, HomeIcon, MapIcon, PaperclipIcon } from "lucide-react";
-import { useRouter } from "next/router";
+import { HomeIcon, ShoppingBagIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
-// import { Popover, Transition } from "@headlessui/react";
 
 const routes = [
   {
@@ -16,21 +14,9 @@ const routes = [
     color: "text-neutral-500",
   },
   {
-    label: "Mobile",
-    icon: SmartphoneIcon,
-    href: "/m",
-    color: "text-neutral-500",
-  },
-  {
-    label: "Map",
-    icon: MapIcon,
-    href: "/p",
-    color: "text-neutral-500",
-  },
-  {
-    label: "Solutions",
-    icon: PaperclipIcon,
-    href: "solutions",
+    label: "Shop",
+    icon: ShoppingBagIcon,
+    href: "/shop",
     color: "text-neutral-500",
   },
 ];
